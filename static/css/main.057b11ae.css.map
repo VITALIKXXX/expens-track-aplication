@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.057b11ae.css","mappings":"AAAA,KACE,qBACF,CAEA,iBAGE,kBAAmB,CACnB,UAAc,CACd,cAAe,CACf,eACF","sources":["index.css"],"sourcesContent":["html {\n  box-sizing: border-box;\n}\n\n*,\n::after,\n::before {\n  box-sizing: inherit;\n  color: #ffffff;\n  font-size: 22px;\n  font-weight: 500;\n}"],"names":[],"sourceRoot":""}
