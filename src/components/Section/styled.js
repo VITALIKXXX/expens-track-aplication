@@ -22,7 +22,7 @@ export const Header = styled.header`
 
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
    font-size: 20px;
     margin: 0;
 `;
