@@ -7,10 +7,6 @@ export const StyledHeader = styled.header`
     padding: 20px;
     text-align: center;
 
-    @media(max-width: 767px) {
-       grid-template-columns: 1fr;
-    }
-
 `;
 
 export const Title = styled.h1`
