@@ -1,11 +1,14 @@
-import Section from "./components/Section";
-
+import { Container } from "./components/Container";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <Section>
-
-    </Section>
+    <>
+      <Header title="Budget Tracker" />
+      <Container>
+        
+      </Container>
+    </>
   );
 }
 
