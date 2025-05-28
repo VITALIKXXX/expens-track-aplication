@@ -17,11 +17,11 @@ body {
 `;
 
 export const theme = {
-    background: {
-        backgroundColors: "white"
-    },
-    colors: {
-        primeriColors: "teal",
-        white: "#ffffff",
-    },
+  background: {
+    backgroundColors: "white"
+  },
+  colors: {
+    primeriColors: "teal",
+    white: "#ffffff",
+  },
 };

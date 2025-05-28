@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 20px;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding: 20px;
+    text-align: center;
 
     @media(max-width: 767px) {
        grid-template-columns: 1fr;
