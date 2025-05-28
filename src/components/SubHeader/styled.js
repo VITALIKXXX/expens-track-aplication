@@ -13,3 +13,8 @@ export const StyledSubHeader = styled.header`
     }
 
 `;
+
+export const Title = styled.h2`
+   font-size: 25px;
+    margin: 0;
+`;

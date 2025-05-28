@@ -1,8 +1,8 @@
-import { StyledSubHeader } from "./styled";
+import { StyledSubHeader, Title } from "./styled";
 
 const SubHeader = ({ title }) => (
     <StyledSubHeader>
-        <h2>{title}</h2>
+        <Title>{title}</Title>
     </StyledSubHeader>
 );
 
