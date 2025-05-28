@@ -1,6 +1,6 @@
 import { StyledSection } from "./styled";
 
-const Section = ({ title }) => (
+const Section = () => (
     <StyledSection>
 
     </StyledSection>
