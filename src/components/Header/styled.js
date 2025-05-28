@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    border-bottom: 1px solid #ddd;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
@@ -13,4 +12,9 @@ export const StyledHeader = styled.header`
        grid-template-columns: 1fr;
     }
 
+`;
+
+export const Title = styled.h1`
+   font-size: 50px;
+    margin: 0;
 `;
