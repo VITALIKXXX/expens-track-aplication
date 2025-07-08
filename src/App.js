@@ -7,7 +7,7 @@ function App() {
     <>
       <Header title="Budget Tracker" />
       <Container>
-        <SubHeader title= "Wydatki" />
+        <SubHeader title="Wydatki" />
       </Container>
     </>
   );
