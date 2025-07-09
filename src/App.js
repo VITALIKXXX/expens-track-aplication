@@ -1,15 +1,21 @@
 import { Container } from "./components/Container";
 import Header from "./components/Header";
-import SubHeader from "./components/SubHeader"
+import Section from "./components/Section";
+
 
 function App() {
   return (
-    <>
-      <Header title="Budget Tracker" />
-      <Container>
-        <SubHeader title="Wydatki" />
-      </Container>
-    </>
+    <Container>
+      <Header />
+      <Section>
+        <div style={{ flex: 1 }}>
+         
+        </div>
+        <div style={{ flex: 2 }}>
+        
+        </div>
+      </Section>
+    </Container>
   );
 }
 

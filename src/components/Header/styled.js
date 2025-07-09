@@ -1,15 +1,9 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
 
-`;
-
-export const Title = styled.h1`
-   font-size: 50px;
-    margin: 0;
 `;

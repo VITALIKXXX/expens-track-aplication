@@ -1,8 +1,8 @@
-import { StyledHeader, Title } from "./styled";
+import { StyledHeader } from "./styled";
 
-const Header = ({ title }) => (
+const Header = () => (
     <StyledHeader>
-        <Title>{title}</Title>
+        Budget Tracker System
     </StyledHeader>
 );
 
