@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/expens-track-aplication/static/js/main.057378f4.js",
+    "main.js": "/expens-track-aplication/static/js/main.aa91df50.js",
     "static/js/453.e3bfa860.chunk.js": "/expens-track-aplication/static/js/453.e3bfa860.chunk.js",
     "index.html": "/expens-track-aplication/index.html",
-    "main.057378f4.js.map": "/expens-track-aplication/static/js/main.057378f4.js.map",
+    "main.aa91df50.js.map": "/expens-track-aplication/static/js/main.aa91df50.js.map",
     "453.e3bfa860.chunk.js.map": "/expens-track-aplication/static/js/453.e3bfa860.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.057378f4.js"
+    "static/js/main.aa91df50.js"
   ]
 }
