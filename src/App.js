@@ -1,6 +1,7 @@
-import { Container } from "./components/Container";
+import Container from "./components/Container";
 import Header from "./components/Header";
-import Section from "./components/Section";
+import { Section, LeftColumn, RightColumn } from "./components/Section";
+import Budget from "./features/tracker/Budget";
 
 
 function App() {
@@ -8,12 +9,12 @@ function App() {
     <Container>
       <Header />
       <Section>
-        <div style={{ flex: 1 }}>
-         
-        </div>
-        <div style={{ flex: 2 }}>
-        
-        </div>
+        <LeftColumn>
+          <Budget />
+        </LeftColumn>
+        <RightColumn>
+
+        </RightColumn>
       </Section>
     </Container>
   );
