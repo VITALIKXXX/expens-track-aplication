@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import { Section, LeftColumn, RightColumn } from "./components/Section";
 import Budget from "./features/tracker/Budget";
 import Expense from "./features/tracker/Expense";
+import Summary from "./features/tracker/Summary";
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Expense />
         </LeftColumn>
         <RightColumn>
-
+          <Summary />
         </RightColumn>
       </Section>
     </Container>
