@@ -18,9 +18,9 @@ function App() {
         </LeftColumn>
         <RightColumn>
           <Summary />
+          <ExpenseHistory />
         </RightColumn>
       </Section>
-      <ExpenseHistory />
     </Container>
   );
 }
