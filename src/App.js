@@ -5,19 +5,23 @@ import Budget from "./features/tracker/Budget";
 import Expense from "./features/tracker/Expense";
 import Summary from "./features/tracker/Summary";
 import ExpenseHistory from "./features/tracker/History";
+import { useState } from "react";
 
 
 function App() {
+
+  const [budgetValue, setBudgetValue] = useState("0");
+
   return (
     <Container>
       <Header />
       <Section>
         <LeftColumn>
-          <Budget />
+          <Budget setBudgetValue={setBudgetValue} />
           <Expense />
         </LeftColumn>
         <RightColumn>
-          <Summary />
+          <Summary budget={budgetValue} />
           <ExpenseHistory />
         </RightColumn>
       </Section>

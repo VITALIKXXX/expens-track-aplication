@@ -1,11 +1,11 @@
 import { SummaryWrapper, Box, Label, Value } from "./styled";
 
-const Summary = () => {
+const Summary = ({ budget }) => {
     return (
         <SummaryWrapper>
             <Box>
                 <Label>Total Budget:</Label>
-                <Value>10000.00</Value>
+                <Value>{budget}</Value>
             </Box>
             <Box>
                 <Label>Total Expense:</Label>
@@ -13,7 +13,7 @@ const Summary = () => {
             </Box>
             <Box>
                 <Label>Budget Left:</Label>
-                <Value>2500.00</Value>
+                <Value>{budget}</Value>
             </Box>
         </SummaryWrapper>
     )
