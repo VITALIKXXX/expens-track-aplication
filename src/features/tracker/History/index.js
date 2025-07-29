@@ -1,6 +1,6 @@
 import { Wrapper, Title, Table, Thead, Tbody, Tr, Th, Td, RemoveButton, } from "./styled";
 
-const ExpenseHistory = () => {
+const ExpenseHistory = ({ expenses }) => {
     return (
         <Wrapper>
             <Title>Expense History:</Title>
@@ -13,21 +13,16 @@ const ExpenseHistory = () => {
                     </Tr>
                 </Thead>
                 <Tbody>
-                    <Tr>
-                        <Td>Grocery</Td>
-                        <Td>2000.00</Td>
-                        <Td><RemoveButton>Remove</RemoveButton></Td>
-                    </Tr>
-                    <Tr>
-                        <Td>Loan</Td>
-                        <Td>1000.00</Td>
-                        <Td><RemoveButton>Remove</RemoveButton></Td>
-                    </Tr>
-                    <Tr>
-                        <Td>Shopping</Td>
-                        <Td>3000.00</Td>
-                        <Td><RemoveButton>Remove</RemoveButton></Td>
-                    </Tr>
+                    {expenses.map((item, index) => (
+                        <Tr key={index}>
+                            <Td>{item.title}</Td>
+                            <Td>{item.amount}</Td>
+                            <Td>
+                                <RemoveButton>Remove</RemoveButton>
+                            </Td>
+                        </Tr>
+                    ))}
+
                 </Tbody>
             </Table>
         </Wrapper>

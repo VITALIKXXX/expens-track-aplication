@@ -11,6 +11,11 @@ import { useState } from "react";
 function App() {
 
   const [budgetValue, setBudgetValue] = useState("0");
+  const [expenses, setExpenses] = useState([]);
+
+  const addExpense = (expense) => {
+    setExpenses((prev) => [...prev, expense]);
+  };
 
   return (
     <Container>
@@ -18,11 +23,11 @@ function App() {
       <Section>
         <LeftColumn>
           <Budget setBudgetValue={setBudgetValue} />
-          <Expense />
+          <Expense addExpense={addExpense} />
         </LeftColumn>
         <RightColumn>
-          <Summary budget={budgetValue} />
-          <ExpenseHistory />
+          <Summary budget={budgetValue} expenses={expenses} />
+          <ExpenseHistory expenses={expenses} />
         </RightColumn>
       </Section>
     </Container>
