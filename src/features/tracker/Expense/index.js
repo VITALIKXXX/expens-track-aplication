@@ -17,10 +17,6 @@ const Expense = ({ addExpense, resetAll }) => {
         }
     };
 
-    const handleReset = () => {
-        setTitle("");
-        setAmount("");
-    };
 
     return (
         <Wrapper>
