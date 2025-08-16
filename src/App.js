@@ -23,13 +23,18 @@ function App() {
     );
   };
 
+  const resetAll = () => {
+    setBudgetValue(0);
+    setExpenses([]);
+  };
+
   return (
     <Container>
       <Header />
       <Section>
         <LeftColumn>
           <Budget setBudgetValue={setBudgetValue} />
-          <Expense addExpense={addExpense} />
+          <Expense addExpense={addExpense} resetAll={resetAll} />
         </LeftColumn>
         <RightColumn>
           <Summary budget={budgetValue} expenses={expenses} />

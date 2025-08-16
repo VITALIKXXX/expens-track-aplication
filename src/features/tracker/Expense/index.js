@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Wrapper, Label, Input, Button, ResetButton } from "./styled";
 
-const Expense = ({ addExpense }) => {
+const Expense = ({ addExpense, resetAll }) => {
 
     const [title, setTitle] = useState("");
     const [amount, setAmount] = useState("");
@@ -40,7 +40,7 @@ const Expense = ({ addExpense }) => {
                 onChange={(e) => setAmount(e.target.value)}
             />
             <Button onClick={handleAdd}>Add Expense</Button>
-            <ResetButton onClick={handleReset}>Reset All</ResetButton>
+            <ResetButton onClick={resetAll}>Reset All</ResetButton>
         </Wrapper>
     )
 }
