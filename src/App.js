@@ -17,6 +17,12 @@ function App() {
     setExpenses((prev) => [...prev, expense]);
   };
 
+  const removeExpense = (indexToRemove) => {
+    setExpenses((prevExpenses) =>
+      prevExpenses.filter((_, index) => index !== indexToRemove)
+    );
+  };
+
   return (
     <Container>
       <Header />
@@ -27,7 +33,7 @@ function App() {
         </LeftColumn>
         <RightColumn>
           <Summary budget={budgetValue} expenses={expenses} />
-          <ExpenseHistory expenses={expenses} />
+          <ExpenseHistory expenses={expenses} removeExpense={removeExpense} />
         </RightColumn>
       </Section>
     </Container>

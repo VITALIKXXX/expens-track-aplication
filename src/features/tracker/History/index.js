@@ -1,6 +1,6 @@
 import { Wrapper, Title, Table, Thead, Tbody, Tr, Th, Td, RemoveButton, } from "./styled";
 
-const ExpenseHistory = ({ expenses }) => {
+const ExpenseHistory = ({ expenses, removeExpense }) => {
     return (
         <Wrapper>
             <Title>Expense History:</Title>
@@ -18,7 +18,9 @@ const ExpenseHistory = ({ expenses }) => {
                             <Td>{item.title}</Td>
                             <Td>{item.amount}</Td>
                             <Td>
-                                <RemoveButton>Remove</RemoveButton>
+                                <RemoveButton onClick={() => removeExpense(index)}>
+                                    Remove
+                                </RemoveButton>
                             </Td>
                         </Tr>
                     ))}
